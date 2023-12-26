@@ -3,10 +3,10 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserLoginComponent } from './components/user-login/user-login.component';
-import { HomePageComponent } from './components/home-page/home-page.component';
-import { PublicPageComponent } from './components/public-page/public-page.component';
-import { PersonalPageComponent } from './components/personal-page/personal-page.component';
+import { UserLoginComponent } from './user-login/user-login.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { PublicPageComponent } from './public-page/public-page.component';
+import { PersonalPageComponent } from './personal-page/personal-page.component';
 import { MenuModule } from 'primeng/menu';
 import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,7 +19,9 @@ import { InputTextModule } from 'primeng/inputtext';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 import { AvatarModule } from 'primeng/avatar';
 import { NgOptimizedImage } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -49,7 +51,9 @@ import { FormsModule } from '@angular/forms';
     AvatarModule,
     AvatarGroupModule,
     InputTextModule,
-    ButtonModule
+    ButtonModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [ provideClientHydration() ],

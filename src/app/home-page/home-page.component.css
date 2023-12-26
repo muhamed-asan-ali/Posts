@@ -30,16 +30,20 @@
 
   
 #spacing{
-  margin-top: 200px;
-  margin-left: 170px;
-  margin-right: 290px;
+  margin-top: 120px;
+  margin-left: 11px;
+  margin-right: 11px;
 }
 
 #sizing-image{
-  height: 455px;
+  height: 370px;
 }
 
 #subtitle{
   margin-left: 50px;
   margin-right: 50px;
+}
+
+#image-s{
+  height: 370px;
 }

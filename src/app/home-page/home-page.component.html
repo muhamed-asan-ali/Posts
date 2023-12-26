@@ -21,17 +21,31 @@
 
 
 
+<!-- <h2>User Details</h2>
+
+<div *ngIf="userDetails">
+  <p><strong>Username:</strong> {{ userDetails.username }}</p>
+</div>
+<div *ngIf="!userDetails">
+  <p>User not found</p>
+</div>
+
+<button (click)="navigateToAdditionalUserData()">Go to Additional User Data</button> -->
+
+
+
+
 <div id="spacing" class="d-flex justify-content-between">
 
-  <div class="contain">
+  <div class="contain" *ngIf="userDetails">
     <p-overlayPanel #op>
           waiting
     </p-overlayPanel>
 
-    <p-button (click)="op.toggle($event)" icon="pi pi-image" label=" ">
+    <p-button (click)="op.toggle($event)" (click)="navigateToAdditionalUserData()" icon="pi pi-image" label=" ">
       <b id="subtitle">Profile</b>
       <div class='shrink'>
-        <img src=".\assets\images\personal.png" style="">
+        <img id="image-s" src=".\assets\images\personal.png" style="">
       </div>
     </p-button>
 
